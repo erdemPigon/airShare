@@ -1,0 +1,48 @@
+@import url('./utils.css');
+@import url('./radix.css');
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: var(--blue-2);
+  padding-block: var(--space-5);
+}
+
+.dropzone-area {
+  padding: 2rem;
+  background-color: var(--gray-2);
+  border-radius: var(--radius-4);
+  border: 1px dashed var(--gray-8);
+  transition: background-color 0.15s ease;
+}
+
+.dropzone-area:hover {
+  background-color: var(--blue-3);
+  border-color: var(--blue-8);
+  cursor: pointer;
+}
+
+.navbar-menu-item {
+  border-left: 4px solid transparent;
+  padding-inline: var(--space-4);
+  transition: border-color 0.25s ease;
+  cursor: pointer;
+}
+
+.navbar-menu-item:hover {
+  border-left-color: var(--iris-4);
+}
+
+.navbar-menu-item[data-active="true"] {
+  border-left: 4px solid var(--iris-8);
+}
+
+.device-component:hover {
+  cursor: pointer;
+  background-color: var(--gray-5);
+  border-radius: var(--radius-4);
+  box-shadow: var(--gray-5) 0px 2px 8px 0px;
+}
